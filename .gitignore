@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.env
+
+# Data - nechceme nahrávat velké CSV soubory
+data/
+
+# Virtual environment
+CyberSec/
+venv/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+
+output.csv
+client.py
