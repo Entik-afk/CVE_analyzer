@@ -32,8 +32,12 @@ pip install -r requirements.txt
 ```bash
 python ingest.py
 ```
+3. Spust scheduler
+```bash
+python scheduler.py
+```
 
-3. Otevři analytický notebook:
+4. Otevři analytický notebook:
 notebook/analysis.ipynb
 
 ## Co analyzuje
