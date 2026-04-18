@@ -7,9 +7,12 @@ Automatizovaný nástroj pro stahování a analýzu CVE (Common Vulnerabilities 
 Stahuje aktuální CVE záznamy z NVD API, ukládá je lokálně a provádí analytické vizualizace pro pochopení trendů v kybernetické bezpečnosti.
 
 ## Architektura
+
+```text
 NVD API → nvd_client.py → csv_storage.py → data/cves.csv
-↓
-analysis.ipynb
+                                                    ↓
+                                          analysis.ipynb
+```
 
 ## Tech stack
 
@@ -40,8 +43,10 @@ notebook/analysis.ipynb
 - Pokrytí záplatami (patch coverage)
 - Trend publikovaných CVEs v čase
 
-## Struktura projektu
-ve-analyzer/
+# Struktura projektu
+
+```text
+cve-analyzer/
 ├── src/
 │   ├── nvd_client.py      # stahování a parsování z NVD API
 │   ├── state_manager.py   # incremental loading
@@ -51,4 +56,4 @@ ve-analyzer/
 │   └── analysis.ipynb     # analytické vizualizace
 ├── ingest.py              # vstupní bod
 └── requirements.txt
-
+```
